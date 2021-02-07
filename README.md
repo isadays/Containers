@@ -42,18 +42,18 @@ Após a criação deste container, Singularity.simg, deve ser feito o seu upload
 Faz-se necessário para a execução do job que o usuário tenha acesso ao cluster. Isto se dará através *do* comando;
 
   
-      "code": "$ ssh u<numeroufscar>@openhpc.ufscar.br",
+       $ ssh u<numeroufscar>@openhpc.ufscar.br
       
   
 Agora, com o acesso **permitido** ao Cluster, criaremos um job com extensão .sh , de acordo com o padrão sugerido e também sob vista dos recursos utilizados pelo programa a ser executado, através do comando:
 
-      "code": "$ nano job<usuario>.sh",
+       $ nano job<usuario>.sh
      
   
 Uma outra maneira é enviarmos o arquivo do job, em nossa máquina local, para o nosso ambiente ssh,  desta forma, não precisaremos criar um novo arquivo, e sim utilizar este mesmo. Isto é feito através do comando:
 
-      "code": "$ scp <arquivo_job> u<nro_ufscar>@openhpc.ufscar.br:~/",
-      "language": "text"
+      $ scp <arquivo_job> u<nro_ufscar>@openhpc.ufscar.br:~/
+     
     
 Antes de mais nada, é essencial checar se os caminhos estão corretos e se os arquivos de input estão contidos nos devidos caminhos.
 
@@ -62,19 +62,19 @@ Antes de mais nada, é essencial checar se os caminhos estão corretos e se os a
 
 Por fim, executamos o nosso job através do comando:
 
-      "code": "$ sbatch  job600172.sh",
+      $ sbatch  job600172.sh
      
     
 É esperado que após a execução deste comando, apareça a seguinte mensagem na tela:
 
-      "code": "Submitted batch job <id_job>",
+      Submitted batch job <id_job>
       
 # "Por fim..."
 
 Uma vez submetido um job para a fila, podemos verificar o
 status deste , através do comando
 
-      "code": "$ squeue",
+    $ squeue
       
     
 ## "Arquivo de Saída"
