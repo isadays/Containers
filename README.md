@@ -23,8 +23,6 @@ Seja bem vindo! Abaixo se encontra a tabela para identificação dos arquivos an
     "3-1": "Arquivo de saída obtido após submissão do job no Cluster."
   }
 # "Tutorial para execução do Job no Cluster"
-}
-[/block]
 
 # "A Criação do Container"
 
@@ -77,7 +75,7 @@ Uma vez submetido um job para a fila, podemos verificar o
 status deste , através do comando
 
       "code": "$ squeue",
-      "language": "text"
+      
     
 ## "Arquivo de Saída"
 
