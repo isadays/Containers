@@ -35,23 +35,22 @@ Para a execução de nosso job no Cluster, é essencial que o container já este
     
 Após a criação deste container, Singularity.simg, deve ser feito o seu upload no serviço remoto, em um caminho tal que conste posteriormente em nosso job. Por exemplo, para a execução deste job, utilizou-se o caminho hpc/containers/ .
 
-{
-  "title": "Caminhos"
-}
-# "Criação de Pastas no Google Drive ou outro serviço remoto",
+# "Caminhos"
+
+## "Criação de Pastas no Google Drive ou outro serviço remoto",
   "É importante a criação de caminhos corretos para o Google Drive, isto porque os arquivos de hpc/input devem constar na pasta input e o container deve existir no caminho hpc/containers para que se faça uma cópia do container para execução do job. Ademais, o arquivo de saída é enviado ao caminho hpc/output. Não importa a denominação das pastas, deste que os caminhos no serviço remoto e local estejam corretos no job."
-}
+
 
 Faz-se necessário para a execução do job que o usuário tenha acesso ao cluster. Isto se dará através *do* comando;
 
   
       "code": "$ ssh u<numeroufscar>@openhpc.ufscar.br",
-      "language": "text"
+      
   
 Agora, com o acesso **permitido** ao Cluster, criaremos um job com extensão .sh , de acordo com o padrão sugerido e também sob vista dos recursos utilizados pelo programa a ser executado, através do comando:
 
       "code": "$ nano job<usuario>.sh",
-      "language": "text"
+     
   
 Uma outra maneira é enviarmos o arquivo do job, em nossa máquina local, para o nosso ambiente ssh,  desta forma, não precisaremos criar um novo arquivo, e sim utilizar este mesmo. Isto é feito através do comando:
 
@@ -60,7 +59,7 @@ Uma outra maneira é enviarmos o arquivo do job, em nossa máquina local, para o
     
 Antes de mais nada, é essencial checar se os caminhos estão corretos e se os arquivos de input estão contidos nos devidos caminhos.
 
- ## Observação sobre os Caminhos no Job",
+ ## Observação sobre os Caminhos no Job,
   "body": "service=<perfil_remoto>                             # Nome do perfil remoto no rclone\n\nremote_in=<caminho_pasta_servico_remoto_input>                        # Pasta no serviço remoto para input\n\nremote_out=<<caminho_pasta_servico_remoto_output>                      # Pasta no serviço remoto para output\n\nremote_sing=hpc/containers                  # Pasta no serviço remoto para os containers\n\ncontainer_in=/opt/input                     # Pasta no cluster para input\n\ncontainer_out=/opt/output                   # Pasta no cluster para output\n\nlocal_sing=.                                # Pasta local para o container singularity\n\nlocal_job=\"/scratch/job.${SLURM_JOB_ID}\"   # Pasta temporária local\n\nlocal_in=\"${local_job}/input/\"              # Pasta local para arquivos de entrada\n\nlocal_out=\"${local_job}/output/\"            # Pasta local para arquivos de saída"
 
 Por fim, executamos o nosso job através do comando:
