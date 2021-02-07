@@ -1,5 +1,5 @@
 # Containers
-Projeto Final - Introdução a Computação Científica. Computação de Alto Desempenho ou  High Performance Computing (HPC), na Nuvem. Criação de Container e Job paralelo utilizando OpenMP e MPI. Para isto, utilizou-se um programa escrito em C++.
+Projeto Final - Introdução a Computação Científica. Computação de Alto Desempenho ou  High Performance Computing (HPC), na Nuvem. Criação de Container e Job paralelo utilizando OpenMP e MPI. Para isto, utilizou-se um programa escrito em C.
 
 
 ---
@@ -17,9 +17,9 @@ Seja bem vindo! Abaixo se encontra a tabela para identificação dos arquivos an
     "0-1": "Este programa escrito em linguagem c, utiliza MPI e OpenMP, para calcular um produto escalar.",
     "1-0": "jobu600172.sh",
     "1-1": "Job paralelo a ser executado no cluster da Ufscar.",
-    "2-0": "Singularity",
+    "2-0": "Recipe",
     "2-1": "Recipe para a criação do Container .",
-    "3-0": "2817.out",
+    "3-0": "exemplosaida.out",
     "3-1": "Arquivo de saída obtido após submissão do job no Cluster."
   }
 # "Tutorial para execução do Job no Cluster"
