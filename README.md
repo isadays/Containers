@@ -5,7 +5,7 @@ Projeto Final - Introdução a Computação Científica. Computação de Alto De
 ---
 # "Projeto Final : Job Paralelo" 
 
-"Este projeto final é requisito da Aciepe Introdução a Computação Científica. O trabalho consistiu na criação de um \"job\" paralelo, jobu600172.sh, a ser executado no cluster da UFSCar. A aplicação alvo, projeto_final.c, escrita em código c, é o produto escalar entre matrizes utilizando MPI, com a divisão das iterações no código utilizando um for paralelo com OpenMP. O serviço remoto utilizado foi o Google Drive, que foi configurado através do comando rclone config, no ambiente ssh do Cluster."
+"Este projeto final é requisito da Aciepe Introdução a Computação Científica. O trabalho consistiu na criação de um \"job\" paralelo, jobu600172.sh, a ser executado no cluster da UFSCar. A aplicação alvo, "projeto_final.c", escrita na linguagem de programação C, consiste no produto escalar entre matrizes, utilizando MPI, com a divisão das iterações no código utilizando um for paralelo com OpenMP. O serviço remoto utilizado foi o Google Drive, configurado através do comando rclone config, no ambiente ssh do Cluster."
 
 Seja bem vindo! Abaixo se encontra a tabela para identificação dos arquivos anexados à esta pasta.
 
